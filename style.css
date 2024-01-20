@@ -1,0 +1,164 @@
+html {
+  height: 100%;
+  width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', san-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4dcf4;
+    
+}
+
+.container{
+    display: flex;
+}
+
+nav{
+    background-color: #babaf2;
+    color: #080707;
+    padding: 20px;
+    min-width: 200px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+nav a{
+    text-decoration: underline;
+    color: black;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #4f1060;
+}
+
+nav a:visited{
+    color: #0e2362;
+}
+
+main{
+    flex: 1;
+    padding: 20px;
+    
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    padding: 40px;
+    
+}
+
+.hero-section{
+    background: linear-gradient(#9494e5, #e28de2);
+    color: black;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.icon-container{
+    display:flex;
+    justify-content: center;
+}
+
+.icon{
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+.h3{
+    color: #424162;
+    text-align: center;
+}
+
+.h4{
+    color:#072774;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.986rem, 0.9716161616161618rem + 5.301010101010101vw, 5.61rem);
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.488rem, 1.1668282828282828rem + 3.4767676767676767vw, 4.209rem);
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.074rem, 1.2426060606060603rem + 2.1878787878787884vw, 3.157rem);
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.728rem, 1.2359191919191916rem + 1.2949494949494955vw, 2.369rem);
+}
+
+@media (min-width: 768px)
+{
+    .container{
+        flex-direction: column;
+    }
+
+    nav {
+        min-width: 100%;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    main{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    .container{
+        flex-direction: row;
+    }
+
+    nav{
+        min-width: 20%;
+    }
+
+    main{
+        flex: 1;
+        padding: 20px;
+    }
+}
